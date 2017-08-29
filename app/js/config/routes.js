@@ -17,7 +17,11 @@ function routes($stateProvider){
             templateUrl: 'views/auth/login_view.html',
             controller: 'authController',
             controllerAs: 'vm'
-
-
+        })
+        .state('app.dashboard', {
+            url: '/dashboard',
+            templateUrl: 'views/dashboard/home.html',
+            controller: 'homeController',
+            controllerAs: 'vm'
         })
 }
