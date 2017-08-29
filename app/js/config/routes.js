@@ -7,21 +7,17 @@ function routes($stateProvider){
     $stateProvider
         .state('app',{
             access : [],
-            templateUrl : 'views/layout/navbar_view.html',
-            controller : 'navbarController',
+            templateUrl : 'views/layout/login.tpl.html',
+            controller : 'loginController',
             controllerAs: 'vm',
             abstract : true
         })
-        .state('app.login',{
-            url : '/login',
-            access : [],
-            views : {
-                content:{
-                    templateUrl : 'views/auth/login_view.html',
-                    controller : 'authController',
-                    controllerAs : 'vm'
-                }
-            }
+        .state('app.login', {
+            url: '/login',
+            templateUrl: 'views/auth/login_view.html',
+            controller: 'authController',
+            controllerAs: 'vm'
+
 
         })
 }

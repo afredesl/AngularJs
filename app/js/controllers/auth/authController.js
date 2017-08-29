@@ -6,10 +6,10 @@ function authController(){
     var vm = this;
 
 
-
-    activate();
+    vm.Hola2 = "Holaaa";
+    init();
     //////////
-    function activate(){
+    function init(){
         console.log("Welcome to login");
     }
 }
