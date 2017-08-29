@@ -7,3 +7,7 @@ angular
         'LocalStorageModule',
         'md.data.table'
     ])
+    .config(function ($urlRouterProvider) {
+        // Parametros de configuración
+        $urlRouterProvider.otherwise('login');
+    })

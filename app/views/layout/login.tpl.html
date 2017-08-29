@@ -1,12 +1,20 @@
-<section>
-  <div class="container">
-      <div class="row">
-          <div class="col-md-2">alnlaksfhkl</div>
-          <div class="col-md-2">alnlaksfhkl</div>
-          <div class="col-md-2">alnlaksfhkl</div>
-          <div class="col-md-2">alnlaksfhkl</div>
-          <div class="col-md-2">alnlaksfhkl</div>
-          <div class="col-md-2">alnlaksfhkl</div>
-      </div>
-  </div>
-</section>
+
+<div class="section-content" layout="column" ng-cloak>
+    <!-- start toolbar -->
+    <md-toolbar class="md-hue-1">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-12" align="center">Primeros pasos con AngularJs</div>
+           </div>
+       </div>
+    </md-toolbar>
+    <!-- section -->
+
+    <section layout="row" flex>
+        <!-- content -->
+        <md-content flex layout-padding>
+            <ui-view></ui-view>
+        </md-content>
+        <!-- end content -->
+    </section>
+</div>
