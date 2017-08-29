@@ -15,5 +15,17 @@
   "bugs": {
     "url": "https://github.com/afredesl/AngularJs/issues"
   },
-  "homepage": "https://github.com/afredesl/AngularJs#readme"
+  "homepage": "https://github.com/afredesl/AngularJs#readme",
+  "dependencies": {
+    "angular-chart.js": "^1.1.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-inject": "^4.2.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-webserver": "^0.9.1",
+    "wiredep": "^4.0.0"
+  }
 }
