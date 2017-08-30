@@ -5,6 +5,7 @@ angular
 function routes($stateProvider){
 
     $stateProvider
+
         .state('app',{
             access : [],
             templateUrl : 'views/layout/login.tpl.html',
@@ -12,7 +13,7 @@ function routes($stateProvider){
             controllerAs: 'vm',
             abstract : true
         })
-        .state('app.login', {
+        .state('login', {
             url: '/login',
             templateUrl: 'views/auth/login_view.html',
             controller: 'authController',
