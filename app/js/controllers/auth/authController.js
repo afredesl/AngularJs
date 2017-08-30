@@ -2,7 +2,7 @@ angular
     .module('app')
     .controller('authController', authController);
 
-function authController($state){
+function authController($state, $mdToast){
     var vm = this;
 
 
@@ -19,7 +19,13 @@ function authController($state){
     function login(){
         if(vm.password == '182508500' && vm.username == 'alex@octano.cl'){
             vm.status = 1;
-                $state.go('app.dashboard');
+            $mdToast.show(
+                $mdToast.simple()
+                    .textContent('Bienvenido '+ vm.username)
+                    .hideDelay(3000)
+                    .theme('success-toast')
+            );
+            $state.go('app.dashboard');
         }else{
             vm.status = 0;
         }
