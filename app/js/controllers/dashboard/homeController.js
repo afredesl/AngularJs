@@ -18,8 +18,7 @@ function homeController($mdDialog){
             controller: modalController,
             controllerAs: 'vm',
             templateUrl: 'views/modal/modal.tpl.html',
-            clickOutsideToClose:true,
-            fullscreen : true
+            clickOutsideToClose:true
         })
     }
 }
